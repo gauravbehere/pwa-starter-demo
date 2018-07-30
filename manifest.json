@@ -1,0 +1,28 @@
+{
+	"name": "PWA Starter Demo ",
+	"short_name": "PWA Demo",
+	"description": "PWA starter demo with features like sync, push etc",
+	"start_url": "./index.html?ref=home",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#000000",
+	"theme_color": "#000000",
+	"icons": [	
+        {
+			"src": "./images/icon_192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "./images/icon_512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}	
+	],
+	"author": {
+		"name": "Gaurav Behere",
+		"website": "http://gauravbehere.in",
+		"github": "https://github.com/gauravbehere"		
+    },
+    "gcm_sender_id": "103953800507"
+}
