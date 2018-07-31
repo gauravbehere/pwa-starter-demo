@@ -1,4 +1,4 @@
-# pwa-starter-demo ! [alt text](https://gauravbehere.github.io/pwa-starter-demo/images/icon_32.png)
+# pwa-starter-demo ![alt text](https://gauravbehere.github.io/pwa-starter-demo/images/icon_32.png)
 PWA - Getting Started - Starter kit for Progressive Web Apps
 
 # Features Covered
