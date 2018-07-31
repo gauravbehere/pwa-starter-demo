@@ -17,7 +17,7 @@ PWA - Getting Started - Starter kit for Progressive Web Apps
 - git clone https://github.com/gauravbehere/pwa-starter-demo
 - npm install
 - npm start
-Test your progressive web app on http://localhost:4000
+- Test your progressive web app on http://localhost:4000
 
 # Live Demo
 https://gauravbehere.github.io/pwa-starter-demo/
