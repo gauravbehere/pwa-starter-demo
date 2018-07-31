@@ -16,14 +16,16 @@
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-messaging.js"></script>
     <script>
-      // Initialize Firebase with your app settings
+      /* Initialize Firebase with your app settings
+      *  these settings can be found in firebase developer console  
+      */
       var config = {
-        apiKey: "AIzaSyC43JJJObG0BsLwFYIbKOeknRt1Dnz4ZPM",
-        authDomain: "gcm-push-211815.firebaseapp.com",
-        databaseURL: "https://gcm-push-211815.firebaseio.com",
-        projectId: "gcm-push-211815",
-        storageBucket: "",
-        messagingSenderId: "824572363258"
+        apiKey: "<Your API KEY>",
+        authDomain: "<FIREBASE PROJECT NAME>.firebaseapp.com",
+        databaseURL: "https://<FIREBASE PROJECT NAME>.firebaseio.com",
+        projectId: "<FIREBASE PROJECT NAME>",
+        storageBucket: "topics/push_notifications",
+        messagingSenderId: "<YOUR SENDER ID>"
       };
       firebase.initializeApp(config);
     </script>

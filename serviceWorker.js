@@ -10,6 +10,7 @@ var files = [
     '/js/notify.js',
     '/js/app.js',
     '/js/sync.js',
+    '/js/push.js',
     '/js/networkChange.js',
     './manifest.json',
     './images/icon_16.png',
@@ -82,7 +83,7 @@ self.addEventListener('fetch', (event) => {
 
 self.addEventListener('push', (event) => {
     console.info('Event: Push', event);
-    event.waitUntil(self.registration.showNotification("abcd", {body: 'xyz'}));
+    event.waitUntil(self.registration.showNotification("Test Notification", {body: 'Test Body'}));
 });
 
 

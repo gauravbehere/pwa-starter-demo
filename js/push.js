@@ -17,6 +17,9 @@ navigator.serviceWorker.ready
  });
 
  messaging.onMessage(function(payload) {
-    var notification = new Notification(payload.data.body);    
+    navigator.serviceWorker.ready
+        .then(function (registration) {
+          registration.showNotification(payload.data.body)
+        });  
 });
 })(window);

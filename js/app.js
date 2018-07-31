@@ -17,7 +17,10 @@
             console.info("Service Worker State :", installingSW.state);
             switch(installingSW.state) {
               case 'installed':
-                new Notification('Site is updated.\nRefresh the page.');
+              navigator.serviceWorker.ready
+              .then(function (registration) {
+                registration.showNotification('Site Content Updated\n Please Refresh.')
+              });
                 break;
               case 'redundant':
                 throw new Error('The installing service worker became redundant.');

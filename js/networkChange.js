@@ -12,10 +12,16 @@
       * Add logic to change colors or theme here to let user know about connectivity changes    
       */
       if (navigator.onLine) {
-        new Notification('You are back online');        
+        navigator.serviceWorker.ready
+        .then(function (registration) {
+          registration.showNotification('You are back online.')
+        });        
       }
       else {
-        new Notification('Network connection lost');
+        navigator.serviceWorker.ready
+        .then(function (registration) {
+          registration.showNotification('Network connection lost.')
+        });
       }
     }
   })();
