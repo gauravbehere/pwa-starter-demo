@@ -93,3 +93,6 @@ self.addEventListener('sync', function(event) {
      */
     self.registration.showNotification("Syncing Now");
   });
+
+
+  
