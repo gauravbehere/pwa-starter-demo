@@ -1,5 +1,9 @@
 (function(window){
 var messaging = firebase.messaging();
+navigator.serviceWorker.ready
+      .then(function (registration) {
+        messaging.useServiceWorker(registration)
+      });
  messaging
    .requestPermission()
    .then(function () {     
