@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>PWA Starter Demo</title>
     <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
@@ -18,7 +17,7 @@
 
 <body>
     <header>
-        <span class="logo"></span>
+        <span class="logo" onclick="window.location='https://gauravbehere.github.io/pwa-starter-demo/'"></span>
         PWA Starter Demo
     </header>
     <div id="contentDiv">
@@ -45,8 +44,9 @@
                         Background Sync
                 </div>
                 <article>
-                        Background sync is a new web API that lets you defer actions until the user has stable connectivity. This is useful for ensuring that whatever the user wants to send, is actually sent.<br>
-                    <a href="https://developers.google.com/web/updates/2015/12/background-sync" target="_blank">Read More</a>
+                        Background sync is a new web API that lets you defer actions until the user has stable connectivity.<br>
+                    <a href="https://developers.google.com/web/updates/2015/12/background-sync" target="_blank">Read More</a><br><br>
+                    Go Offline & hit this button <button onclick="registerSync()">Trigger Offline Action</button>
                 </article>
             </div>    
         </div>
@@ -115,6 +115,7 @@
     <script src="./js/notify.js"></script>
     <script src="./js/networkChange.js"></script>
     <script src="./js/push.js"></script>
+    <script src="./js/sync.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

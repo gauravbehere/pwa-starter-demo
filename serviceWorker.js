@@ -9,6 +9,7 @@ var files = [
     './css/styles.css',
     '/js/notify.js',
     '/js/app.js',
+    '/js/sync.js',
     '/js/networkChange.js',
     './manifest.json',
     './images/icon_16.png',
@@ -83,3 +84,12 @@ self.addEventListener('push', (event) => {
     console.info('Event: Push', event);
     event.waitUntil(self.registration.showNotification("abcd", {body: 'xyz'}));
 });
+
+
+self.addEventListener('sync', function(event) {
+    console.info('Event: Sync', event);
+    /**
+     * Add logic to send requests to backend when sync happens
+     */
+    self.registration.showNotification("Syncing Now");
+  });
