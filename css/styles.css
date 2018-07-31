@@ -15,12 +15,13 @@ header, footer {
 }
 
 #contentDiv {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 130px);
     background: #fff;
     color: #000;
     overflow-x: hidden;
     overflow-y: auto;
     max-width: 100%;
+    margin-top: 30px;
 }
 
 .logo{
@@ -34,7 +35,7 @@ header, footer {
 }
 
 #contentDiv .feature{
-    min-height: 200px;
+    min-height: 250px;
     min-width: 30%;
     max-width: 30%;
     box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
@@ -49,7 +50,7 @@ footer a{
 }
 
 .featureIcon{
-    height: 200px;
+    height: 250px;
     width: 30%;
     float: left;
     font-size: 70px;
@@ -59,7 +60,7 @@ footer a{
 }
 
 .featureContent{
-    height: 200px;
+    height: 250px;
     float: right;
     color: #0f0e0e;
     width: 69%;
@@ -78,9 +79,9 @@ footer a{
     padding: 20px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     #contentDiv .feature {
-        min-height: 200px;
+        min-height: 250px;
         min-width: 45%;
         max-width: 45%;
         box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
@@ -89,9 +90,9 @@ footer a{
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #contentDiv .feature {
-        min-height: 200px;
+        min-height: 250px;
         min-width: 95%;
         max-width: 95%;
         box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
@@ -106,4 +107,11 @@ footer a{
 }
 .sync{
     color: #d8a33f;
+}
+
+.bolt{
+    color: #FF0000;
+}
+.wifi{
+    color: #a0a2a3;
 }
