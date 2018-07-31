@@ -1,4 +1,4 @@
-var cacheName = 'cache-v2';
+var cacheName = 'cache-v3';
 
 /* 
 * Files to be served from cache
