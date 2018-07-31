@@ -32,6 +32,7 @@ header, footer {
     position: absolute;
     margin-left: 20px;
     left: 0;
+    cursor: pointer;
 }
 
 #contentDiv .feature{
