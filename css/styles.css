@@ -16,11 +16,11 @@ header, footer {
 
 #contentDiv {
     height: calc(100vh - 100px);
-    flex: 1;
-    display: flex;
     background: #fff;
     color: #000;
-    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
 }
 
 .logo{
@@ -33,19 +33,77 @@ header, footer {
     left: 0;
 }
 
-.featureRow{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    flex-direction: row;
+#contentDiv .feature{
+    min-height: 200px;
+    min-width: 30%;
+    max-width: 30%;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    margin: 1%;
+    float: left;
+    padding: 5px;
 }
 
-.featureRow div{
+footer a{
+    color: rgb(247, 162, 4);
+    text-decoration: none;
+}
+
+.featureIcon{
     height: 200px;
-    flex: 1;
-    width: 200px;
-    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
-    margin: 20px;
+    width: 30%;
+    float: left;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.featureContent{
+    height: 200px;
+    float: right;
+    color: #0f0e0e;
+    width: 69%;
+    border-left: 1px solid #e3d0d0;
+}
+
+.featureContent > div{
+    text-align: center;
+    height: 10%;
+    font-weight: 600; 
+}
+
+.featureContent > article{
+    height: 90%;
+    font-weight: 400; 
+    padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    #contentDiv .feature {
+        min-height: 200px;
+        min-width: 45%;
+        max-width: 45%;
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+        margin: 1%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #contentDiv .feature {
+        min-height: 200px;
+        min-width: 95%;
+        max-width: 95%;
+        box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+        margin: 1%;
+        float: left;
+    }
+}
+
+/*Icons*/
+.bell{
+    color: #5cadf3;
+}
+.sync{
+    color: #d8a33f;
 }

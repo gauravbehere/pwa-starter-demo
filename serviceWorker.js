@@ -16,6 +16,7 @@ var files = [
     './images/icon_192.png',
     './images/icon_256.png',
     './images/icon_512.png',
+    "https://use.fontawesome.com/releases/v5.2.0/css/all.css"
 ];
 
 

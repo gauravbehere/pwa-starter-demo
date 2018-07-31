@@ -11,6 +11,7 @@
     <meta name="application-name" content="PWA Starter Demo">
     <link rel="icon" type="image/png" href="./images/icon_32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./images/icon_16.png" sizes="16x16">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="manifest" href="./manifest.json">
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -21,31 +22,61 @@
         PWA Starter Demo
     </header>
     <div id="contentDiv">
-        <div class="featureRow">
-            <div>
-                Push Notifications
+        <div class="feature">
+            <div class="featureIcon">
+                    <i class="fas fa-bell bell"></i>
             </div>
-            <div>
-                Background Sync
-            </div>
-            <div>
-                App Cache
-            </div>
+            <div class="featureContent">
+                <div>
+                        Push Notifications
+                </div>
+                <article>
+                    Engage users with push notifications using Firebase API. It makes use of HTML5 Notification.<br>
+                    <a href="https://firebase.google.com/docs/cloud-messaging/" target="_blank">Read More</a>
+                </article>
+            </div>    
         </div>
-        <div class="featureRow">
-                <div>
-                    Service Worker
-                </div>
-                <div>
-                    Respond To Network Changes
-                </div>
-                <div>
-    
-                </div>
+        <div class="feature">
+            <div class="featureIcon">
+                    <i class="fas fa-sync sync"></i>
             </div>
+            <div class="featureContent">
+                <div>
+                        Background Sync
+                </div>
+                <article>
+                        Background sync is a new web API that lets you defer actions until the user has stable connectivity. This is useful for ensuring that whatever the user wants to send, is actually sent.<br>
+                    <a href="https://developers.google.com/web/updates/2015/12/background-sync" target="_blank">Read More</a>
+                </article>
+            </div>    
+        </div>
+        <div class="feature">            
+            <div class="featureIcon">
+                    <i class="fas fa-sync sync"></i>
+            </div>
+            <div class="featureContent">
+                <div>
+                        Lightening Speed
+                </div>
+                <article>
+                        Background sync is a new web API that lets you defer actions until the user has stable connectivity. This is useful for ensuring that whatever the user wants to send, is actually sent.<br>
+                    <a href="https://developers.google.com/web/updates/2015/12/background-sync" target="_blank">Read More</a>
+                </article>
+            </div>   
+        </div>
+        <div class="feature">
+            Service Worker
+        </div>
+        <div class="feature">
+            Respond To Network Changes
+        </div>
+        <div class="feature">
+            Source Code
+        </div>
     </div>
     <footer>
-            &copy; No rights reserved.</a>
+        &copy; MIT Licence &nbsp;
+        <a href="http://gauravbehere.in" target="_blank">Gaurav Behere</a>
     </footer>
 
     <script src="./js/notify.js"></script>
