@@ -7,6 +7,10 @@ function registerSync() {
     }).then(function () {
         return navigator.serviceWorker.ready;
     }).then(function (reg) {
+        /*
+        * You may also want to check if there is already a sync pending with same name before registering a sync.
+        * More details here : https://wicg.github.io/BackgroundSync/spec/#sync-manager-interface
+        */
         return reg.sync.register('syncDemo');
     }).then(function () {
         console.info('Sync registered');
