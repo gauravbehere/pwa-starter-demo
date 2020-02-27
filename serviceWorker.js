@@ -83,7 +83,7 @@ self.addEventListener('fetch', (event) => {
 
 self.addEventListener('push', (event) => {
     console.info('Event: Push', event);
-    event.waitUntil(self.registration.showNotification("Test Notification", {body: 'Test Body'}));
+    event.waitUntil(self.registration.showNotification("test notification", {body: event.body}));
 });
 
 
