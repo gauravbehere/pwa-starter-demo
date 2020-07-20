@@ -22,6 +22,9 @@ PWA - Getting Started - Starter kit for Progressive Web Apps
 # Live Demo
 https://gauravbehere.github.io/pwa-starter-demo/
 
+# Read More
+https://levelup.gitconnected.com/building-blocks-of-a-progressive-web-app-ffda0c1ce0db
+
 # Licence
 MIT, Gaurav Behere, gaurav.techgeek@gmail.com, http://gauravbehere.in
 
